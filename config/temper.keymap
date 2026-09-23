@@ -89,9 +89,8 @@
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
-            hold-while-undecided;
             hold-trigger-on-release;
-            hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 21 22 23 24 20>;
+            flavor = "tap-preferred";
         };
 
         hm_shift_l: hm_shift_l {
@@ -101,9 +100,8 @@
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
-            hold-while-undecided;
             hold-trigger-on-release;
-            hold-trigger-key-positions = <5 6 7 8 9 15 16 17 18 19 25 26 27 28 29>;
+            flavor = "tap-preferred";
         };
 
         hm_2: hm_2 {
@@ -131,7 +129,7 @@
             bindings = <&kp SINGLE_QUOTE>;
             key-positions = <18 19>;
             layers = <0>;
-            timeout-ms = <150>;
+            timeout-ms = <30>;
         };
 
         boot_l {
@@ -158,10 +156,17 @@
         };
 
         backslash_pipe {
-            bindings = <&kp NON_US_BACKSLASH>;
+            bindings = <&kp BACKSLASH>;
             key-positions = <28 29>;
-            timeout-ms = <150>;
+            timeout-ms = <30>;
             layers = <0>;
+        };
+
+        backspace_r {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <9 8>;
+            layers = <0>;
+            timeout-ms = <30>;
         };
     };
 
@@ -174,7 +179,7 @@
 &kp Q                     &kp W             &kp E                 &kp R              &kp T        &kp Y      &kp U              &kp I                  &kp O             &kp P
 &hm_shift_l LEFT_SHIFT A  &hm_2 LEFT_GUI S  &hm_2 LEFT_CONTROL D  &hm_2 RIGHT_ALT F  &kp G        &kp H      &hm_2 RIGHT_ALT J  &hm_2 RIGHT_CONTROL K  &hm_2 LEFT_GUI L  &hm_shift_r RIGHT_SHIFT SEMICOLON
 &kp Z                     &kp X             &kp C                 &kp V              &kp B        &kp N      &kp M              &kp COMMA              &kp DOT           &mt BACKSLASH SLASH
-                                            &kp DELETE            &lt 2 TAB          &kp SPACE    &kp ENTER  &lt 3 ENTER        &lt 4 BACKSPACE
+                                            &kp DELETE            &lt 2 TAB          &kp SPACE    &kp ENTER  &mo 3              &lt 4 BACKSPACE
             >;
         };
 
@@ -192,7 +197,7 @@
             display-name = "NavR";
             bindings = <
 &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5    &kp NUMBER_6    &kp NUMBER_7  &kp NUMBER_8    &kp NUMBER_9     &kp NUMBER_0
-&kp ESCAPE    &trans        &trans        &trans        &trans          &kp LEFT        &kp DOWN      &kp UP          &kp RIGHT        &kp BACKSLASH
+&trans        &trans        &trans        &trans        &trans          &kp LEFT        &kp DOWN      &kp UP          &kp RIGHT        &kp SLASH
 &kp LC(Z)     &kp LC(Y)     &kp LC(X)     &kp LC(C)     &kp LC(V)       &kp UNDERSCORE  &kp PLUS      &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp BACKSLASH
                             &trans        &trans        &trans          &trans          &trans        &trans
             >;
