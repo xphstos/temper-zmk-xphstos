@@ -178,7 +178,7 @@
 &kp Q                     &kp W             &kp E                 &kp R              &kp T        &kp Y      &kp U              &kp I                  &kp O             &kp P
 &hm_shift_l LEFT_SHIFT A  &hm_2 LEFT_GUI S  &hm_2 LEFT_CONTROL D  &hm_2 RIGHT_ALT F  &kp G        &kp H      &hm_2 RIGHT_ALT J  &hm_2 RIGHT_CONTROL K  &hm_2 LEFT_GUI L  &hm_shift_r RIGHT_SHIFT SEMICOLON
 &kp Z                     &kp X             &kp C                 &kp V              &kp B        &kp N      &kp M              &kp COMMA              &kp DOT           &mt BACKSLASH SLASH
-                                            &lt 6 DELETE          &lt 2 TAB          &kp SPACE    &kp ENTER  &mo 3              &lt 4 ESCAPE
+                                            &lt 6 DELETE          &lt 2 TAB          &kp SPACE    &kp ENTER  &mo 3              &lt 4 ESC
             >;
         };
 
@@ -196,7 +196,7 @@
             display-name = "NavR";
             bindings = <
 &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5    &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0
-&kp ESCAPE    &trans        &trans        &trans        &trans          &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT     &kp SLASH
+&kp ESC       &trans        &trans        &trans        &trans          &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT     &kp SLASH
 &kp TAB       &kp LC(X)     &kp LC(C)     &kp LC(V)     &trans          &trans        &trans        &trans        &trans        &kp BACKSLASH
                             &trans        &trans        &trans          &trans        &trans        &trans
             >;
@@ -206,7 +206,7 @@
             display-name = "NavL";
             bindings = <
 &kp EXCLAMATION  &kp AT_SIGN      &kp HASH           &kp DOLLAR             &kp PERCENT    &kp CARET       &kp AMPERSAND  &kp ASTERISK      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
-&kp ESCAPE       &kp LEFT_BRACE   &kp LEFT_BRACKET   &kp LEFT_PARENTHESIS   &trans         &kp MINUS       &kp EQUAL      &kp LEFT_BRACKET  &kp RIGHT_BRACKET     &kp GRAVE
+&kp ESC          &kp LEFT_BRACE   &kp LEFT_BRACKET   &kp LEFT_PARENTHESIS   &trans         &kp MINUS       &kp EQUAL      &kp LEFT_BRACKET  &kp RIGHT_BRACKET     &kp GRAVE
 &kp TAB          &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp RIGHT_PARENTHESIS  &trans         &kp UNDERSCORE  &kp PLUS       &kp LEFT_BRACE    &kp RIGHT_BRACE       &kp TILDE
                                   &trans             &kp PIPE               &trans         &trans          &trans         &trans
             >;
@@ -232,13 +232,15 @@
             >;
         };
 
-        base_2 {
+        BASE_2 {
             bindings = <
 &kp ESC  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &kp BSPC
 &kp TAB  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
 &trans   &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
                  &trans  &trans  &trans    &trans  &trans  &trans
             >;
+
+            label = "base2";
         };
     };
 };
