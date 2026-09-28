@@ -114,6 +114,15 @@
             flavor = "tap-preferred";
             hold-trigger-on-release;
         };
+
+        tapDance_semiQuote: tapDance_semiQuote {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAPDANCE_SEMIQUOTE";
+            #binding-cells = <0>;
+            bindings = <&kp SEMICOLON>, <&kp SINGLE_QUOTE>;
+
+            tapping-term-ms = <50>;
+        };
     };
 
     combos {
@@ -129,7 +138,7 @@
             bindings = <&kp SINGLE_QUOTE>;
             key-positions = <18 19>;
             layers = <0>;
-            timeout-ms = <30>;
+            timeout-ms = <50>;
         };
 
         boot_l {
@@ -158,14 +167,14 @@
         backslash_pipe {
             bindings = <&kp BACKSLASH>;
             key-positions = <28 29>;
-            timeout-ms = <30>;
+            timeout-ms = <50>;
             layers = <0>;
         };
 
         backspace_r {
             bindings = <&kp BACKSPACE>;
             key-positions = <9 8>;
-            timeout-ms = <30>;
+            timeout-ms = <50>;
         };
     };
 
@@ -178,7 +187,7 @@
 &kp Q                     &kp W             &kp E                 &kp R              &kp T        &kp Y      &kp U              &kp I                  &kp O             &kp P
 &hm_shift_l LEFT_SHIFT A  &hm_2 LEFT_GUI S  &hm_2 LEFT_CONTROL D  &hm_2 RIGHT_ALT F  &kp G        &kp H      &hm_2 RIGHT_ALT J  &hm_2 RIGHT_CONTROL K  &hm_2 LEFT_GUI L  &hm_shift_r RIGHT_SHIFT SEMICOLON
 &kp Z                     &kp X             &kp C                 &kp V              &kp B        &kp N      &kp M              &kp COMMA              &kp DOT           &mt BACKSLASH SLASH
-                                            &lt 6 DELETE          &lt 2 TAB          &kp SPACE    &kp ENTER  &mo 3              &lt 4 ESC
+                                            &lt 6 DELETE          &lt 2 TAB          &kp SPACE    &kp ENTER  &lt 3 BACKSPACE    &lt 4 ESC
             >;
         };
 
@@ -215,10 +224,10 @@
         function_layer {
             display-name = "Fun";
             bindings = <
-&kp F1  &kp F2   &kp F3   &kp F4   &trans    &trans  &trans  &trans  &trans  &trans
-&kp F5  &kp F6   &kp F7   &kp F8   &trans    &trans  &trans  &trans  &trans  &trans
-&kp F9  &kp F10  &kp F11  &kp F12  &trans    &trans  &trans  &trans  &trans  &trans
-                 &trans   &trans   &trans    &trans  &trans  &trans
+&kp ESC  &kp F1  &kp F2   &kp F3   &kp F4     &trans  &trans  &trans  &trans  &kp BACKSPACE
+&kp TAB  &kp F5  &kp F6   &kp F7   &kp F8     &trans  &trans  &trans  &trans  &kp DELETE
+&trans   &kp F9  &kp F10  &kp F11  &kp F12    &trans  &trans  &trans  &trans  &trans
+                 &trans   &trans   &trans     &trans  &trans  &trans
             >;
         };
 
