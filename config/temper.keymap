@@ -138,12 +138,12 @@
             bindings = <&kp SINGLE_QUOTE>;
             key-positions = <18 19>;
             layers = <0>;
-            timeout-ms = <50>;
+            timeout-ms = <30>;
         };
 
         boot_l {
             bindings = <&bootloader>;
-            key-positions = <0 4 32>;
+            key-positions = <0 32 4>;
             layers = <0>;
         };
 
@@ -167,14 +167,15 @@
         backslash_pipe {
             bindings = <&kp BACKSLASH>;
             key-positions = <28 29>;
-            timeout-ms = <50>;
+            timeout-ms = <30>;
             layers = <0>;
         };
 
         backspace_r {
             bindings = <&kp BACKSPACE>;
             key-positions = <9 8>;
-            timeout-ms = <50>;
+            timeout-ms = <30>;
+            layers = <0 2 3>;
         };
     };
 
