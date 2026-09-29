@@ -206,7 +206,7 @@
             bindings = <
 &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5    &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0
 &kp ESC       &trans        &trans        &trans        &trans          &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT     &kp SLASH
-&kp TAB       &kp LC(X)     &kp LC(C)     &kp LC(V)     &trans          &trans        &trans        &trans        &trans        &kp BACKSLASH
+&kp TAB       &kp LG(X)     &kp LG(C)     &kp LG(V)     &trans          &trans        &trans        &trans        &trans        &kp BACKSLASH
                             &trans        &trans        &trans          &trans        &trans        &trans
             >;
         };
@@ -224,10 +224,10 @@
         function_layer {
             display-name = "Fun";
             bindings = <
-&kp ESC  &kp F1  &kp F2   &kp F3   &kp F4       &trans  &trans  &trans  &trans  &kp BACKSPACE
-&kp TAB  &kp F5  &kp F6   &kp F7   &kp F8       &trans  &trans  &trans  &trans  &kp DELETE
-&trans   &kp F9  &kp F10  &kp F11  &kp F12      &trans  &trans  &trans  &trans  &trans
-                 &trans   &trans   &kp GLOBE    &trans  &trans  &trans
+&kp ESC  &kp F1  &kp F2   &kp F3                                &kp F4           &trans  &trans  &trans  &trans  &kp BACKSPACE
+&kp TAB  &kp F5  &kp F6   &kp F7                                &kp F8           &trans  &trans  &trans  &trans  &kp DELETE
+&trans   &kp F9  &kp F10  &kp F11                               &kp F12          &trans  &trans  &trans  &trans  &trans
+                 &trans   &kp C_AC_NEXT_KEYBOARD_LAYOUT_SELECT  &kp LC(SPACE)    &trans  &trans  &trans
             >;
         };
 
