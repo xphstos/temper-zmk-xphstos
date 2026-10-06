@@ -174,8 +174,18 @@
         backspace_r {
             bindings = <&kp BACKSPACE>;
             key-positions = <9 8>;
-            timeout-ms = <30>;
-            layers = <0 2 3>;
+            timeout-ms = <40>;
+            require-prior-idle-ms = <20>;
+        };
+
+        input_change {
+            bindings = <&kp LC(SPACE)>;
+            key-positions = <35 32>;
+        };
+
+        option_space {
+            bindings = <&kp LA(SPACE)>;
+            key-positions = <30 32>;
         };
     };
 
