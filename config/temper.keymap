@@ -198,7 +198,7 @@
 &kp Q                     &kp W             &kp E                 &kp R              &kp T        &kp Y      &kp U              &kp I                  &kp O             &kp P
 &hm_shift_l LEFT_SHIFT A  &hm_2 LEFT_GUI S  &hm_2 LEFT_CONTROL D  &hm_2 RIGHT_ALT F  &kp G        &kp H      &hm_2 RIGHT_ALT J  &hm_2 RIGHT_CONTROL K  &hm_2 LEFT_GUI L  &hm_shift_r RIGHT_SHIFT SEMICOLON
 &kp Z                     &kp X             &kp C                 &kp V              &kp B        &kp N      &kp M              &kp COMMA              &kp DOT           &mt BACKSLASH SLASH
-                                            &lt 5 DELETE          &lt 2 TAB          &kp SPACE    &kp ENTER  &mo 3              &lt 4 ESC
+                                            &lt 5 LC(SPACE)       &lt 2 TAB          &kp SPACE    &kp ENTER  &mo 3              &lt 4 ESC
             >;
         };
 
