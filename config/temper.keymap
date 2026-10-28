@@ -115,13 +115,13 @@
             hold-trigger-on-release;
         };
 
-        tapDance_semiQuote: tapDance_semiQuote {
+        td_zLang: td_zLang {
             compatible = "zmk,behavior-tap-dance";
-            label = "TAPDANCE_SEMIQUOTE";
+            label = "TD_ZLANG";
             #binding-cells = <0>;
-            bindings = <&kp SEMICOLON>, <&kp SINGLE_QUOTE>;
+            bindings = <&kp Z>, <&kp LC(SPACE)>;
 
-            tapping-term-ms = <50>;
+            tapping-term-ms = <40>;
         };
     };
 
@@ -164,13 +164,6 @@
             layers = <0>;
         };
 
-        backslash_pipe {
-            bindings = <&kp BACKSLASH>;
-            key-positions = <28 29>;
-            timeout-ms = <30>;
-            layers = <0>;
-        };
-
         backspace_r {
             bindings = <&kp BACKSPACE>;
             key-positions = <9 8>;
@@ -178,14 +171,16 @@
             require-prior-idle-ms = <20>;
         };
 
-        input_change {
-            bindings = <&kp LC(SPACE)>;
-            key-positions = <35 32>;
-        };
-
         option_space {
             bindings = <&kp LA(SPACE)>;
             key-positions = <30 32>;
+        };
+
+        escape {
+            bindings = <&kp ESCAPE>;
+            key-positions = <0 1>;
+            timeout-ms = <40>;
+            require-prior-idle-ms = <33>;
         };
     };
 
@@ -197,8 +192,8 @@
             bindings = <
 &kp Q                     &kp W             &kp E                 &kp R              &kp T        &kp Y      &kp U              &kp I                  &kp O             &kp P
 &hm_shift_l LEFT_SHIFT A  &hm_2 LEFT_GUI S  &hm_2 LEFT_CONTROL D  &hm_2 RIGHT_ALT F  &kp G        &kp H      &hm_2 RIGHT_ALT J  &hm_2 RIGHT_CONTROL K  &hm_2 LEFT_GUI L  &hm_shift_r RIGHT_SHIFT SEMICOLON
-&kp Z                     &kp X             &kp C                 &kp V              &kp B        &kp N      &kp M              &kp COMMA              &kp DOT           &mt BACKSLASH SLASH
-                                            &lt 5 LC(SPACE)       &lt 2 TAB          &kp SPACE    &kp ENTER  &mo 3              &lt 4 ESC
+&td_zLang                 &kp X             &kp C                 &kp V              &kp B        &kp N      &kp M              &kp COMMA              &kp DOT           &mt BACKSLASH SLASH
+                                            &lt 5 ESCAPE          &lt 2 TAB          &kp SPACE    &kp ENTER  &mo 3              &lt 4 LC(SPACE)
             >;
         };
 
