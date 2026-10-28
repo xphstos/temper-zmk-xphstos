@@ -89,7 +89,6 @@
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
-            hold-trigger-on-release;
             flavor = "tap-preferred";
         };
 
@@ -100,7 +99,6 @@
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
-            hold-trigger-on-release;
             flavor = "tap-preferred";
         };
 
@@ -112,7 +110,6 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
             flavor = "tap-preferred";
-            hold-trigger-on-release;
         };
 
         td_zLang: td_zLang {
@@ -152,12 +149,6 @@
             key-positions = <32 33>;
         };
 
-        del_left {
-            bindings = <&kp DEL>;
-            key-positions = <20 23>;
-            timeout-ms = <200>;
-        };
-
         boot_r {
             bindings = <&bootloader>;
             key-positions = <5 33 9>;
@@ -169,11 +160,6 @@
             key-positions = <9 8>;
             timeout-ms = <40>;
             require-prior-idle-ms = <20>;
-        };
-
-        option_space {
-            bindings = <&kp LA(SPACE)>;
-            key-positions = <30 32>;
         };
 
         escape {
